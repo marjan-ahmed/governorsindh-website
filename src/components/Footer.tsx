@@ -1,6 +1,13 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon, Mail, TwitterIcon, YoutubeIcon } from 'lucide-react';
-import Link from 'next/link';
-import React from 'react';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  Mail,
+  TwitterIcon,
+  YoutubeIcon,
+} from "lucide-react";
+import Link from "next/link";
+import React from "react";
 
 function Footer() {
   return (
@@ -30,16 +37,37 @@ function Footer() {
         <div>
           <h1 className="text-xl font-bold">Social Links</h1>
           <div className="flex gap-4 my-4 justify-center sm:justify-start">
-            <FacebookIcon />
-            <YoutubeIcon />
-            <TwitterIcon />
-            <InstagramIcon />
-            <LinkedinIcon />
+            <Link href={"https://www.facebook.com/TeamKTessori"} target="blank">
+              <FacebookIcon />
+            </Link>
+            <Link
+              href={"https://www.youtube.com/@KamranTessorikk"}
+              target="blank"
+            >
+              <YoutubeIcon />
+            </Link>
+            <Link href={"https://twitter.com/KamranTessoriPk"} target="blank">
+              <TwitterIcon />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/KamranTessoriPk"}
+              target="blank"
+            >
+              <InstagramIcon />
+            </Link>
+            <Link
+              href={"https://pk.linkedin.com/company/governor-sindh-initiative"}
+              target="blank"
+            >
+              <LinkedinIcon />
+            </Link>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 my-5 items-center sm:items-start">
             <Mail />
             <button className="underline text-primary">
-              <Link href="mailto:education@governorsindh.com">education@governorsindh.com</Link>
+              <Link href="mailto:education@governorsindh.com">
+                education@governorsindh.com
+              </Link>
             </button>
           </div>
         </div>

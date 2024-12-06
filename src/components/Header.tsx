@@ -1,9 +1,6 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../components/Button";
-import Card from "@/components/Card";
-import Footer from "@/components/Footer";
 import { useState } from "react";
 
 function Header() {
